@@ -1,0 +1,25 @@
+Package seleniumbasics;
+
+Import org.openqa.selenium.By;
+Import org.openqa.selenium.Keys;
+Import org.openqa.selenium.WebDriver;
+Import org.openqa.selenium.WebElement;
+Import org.openqa.selenium.chrome.ChromeDriver;
+
+Public class amazonsigninpage{
+	Public static void main(String[] args) throws InterruptedException{
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+
+		Thread.sleep(7000);
+		driver.findElement(By.xpath(“//div[@class=’a-box-inner a-padding-extra-large’]/descendant::input[1]”)).sendKeys(“8978397891”);
+		driver.findElement(By.xpath(“//div[@class=’a-box-inner a-padding-extra-large’]/descendant::input[3]”)).sendKeys(“Sreeja@123”);
+		driver.findElement(By.xpath(“//div[@class=’a-box-inner a-padding-extra-large’]/descendant::input[3]”)).click();
+
+
+driver.quit();
+
+}
+}
+
